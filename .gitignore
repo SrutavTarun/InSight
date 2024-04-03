@@ -1,0 +1,5 @@
+# Ignore specific file
+svm_model.pkl
+
+# Ignore files with .pkl extension
+*.pkl
