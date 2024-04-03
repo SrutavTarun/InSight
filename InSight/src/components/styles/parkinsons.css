@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
+
+.parkinsons {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5em 0 0 0;
+  height: 100%;
+  padding: 3em 2em;
+  background: linear-gradient(to left, rgb(45, 42, 42), rgb(20, 18, 18));
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 3em 0 0 0;
+  padding: 0;
+  width: 90%;
+}
+
+.heading {
+  font: 3em "Reddit Mono";
+  margin: 0 0 0em 0.3em;
+  color: antiquewhite;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 5em 0 0 0;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  background-color: rgb(7, 56, 84);
+  color: rgb(255, 255, 255);
+  font: 1em "Reddit Mono";
+  padding: 1em;
+  margin: 1em;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 90%;
+  text-align: center;
+}
+
+.custom-file-upload:hover {
+  background-color: rgb(47, 186, 236);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+button[type="submit"] {
+  display: none;
+}
+
+.custom-file-submit {
+  /* background-color: rgb(40, 151, 192); */
+  /* color: white; */
+  font: 1em "Reddit Mono";
+  color: rgb(255, 255, 255);
+  background-color: rgb(107, 116, 226);
+  padding: 1em;
+  margin: 1em 1em 1em 1em;
+  cursor: pointer;
+  width: 90%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.custom-file-submit:hover {
+  background-color: rgb(47, 186, 236);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  }   
