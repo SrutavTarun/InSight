@@ -19,10 +19,29 @@ def generate_pdf(text, filename):
     # Set font and size
     c.setFont("Helvetica", 12)
     
+    # Calculate the available width for the text
+    text_width = letter[0] - 100  # Assuming left and right margin of 50 units
+    
     # Write text to the canvas
-    text_lines = text.split("\n")
+    lines = []
+    for line in text.split("\n"):
+        if c.stringWidth(line) <= text_width:
+            lines.append(line)
+        else:
+            # Split long lines into multiple lines to fit within the page width
+            words = line.split()
+            new_line = ''
+            for word in words:
+                if c.stringWidth(new_line + ' ' + word) <= text_width:
+                    new_line += ' ' + word if new_line else word
+                else:
+                    lines.append(new_line.strip())
+                    new_line = word
+            if new_line:
+                lines.append(new_line.strip())
+    
     y_coordinate = 750  # Starting y-coordinate
-    for line in text_lines:
+    for line in lines:
         c.drawString(50, y_coordinate, line)
         y_coordinate -= 20  # Decrease y-coordinate for next line
     
