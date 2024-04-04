@@ -1,7 +1,13 @@
+import "./styles/navbar.css"
+
 export const Navbar = () => {
-    return(
-        <div className="navbar">
-            <div className="logo">InSight</div>
+  return (
+    <>
+      <nav className="navbar">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/">InSight</a>
         </div>
-    )
+      </nav>
+    </>
+  );
 }

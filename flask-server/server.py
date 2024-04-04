@@ -1,6 +1,8 @@
 import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import subprocess
+
 
 app = Flask(__name__)
 CORS(app)
@@ -21,10 +23,16 @@ def handle_function1():
         try:
             uploaded_file.save(file_path)  # Save the file
             return jsonify({'message': 'File uploaded successfully!'}), 201  # Return success message
+            result = subprocess.run(["python", "../dementia/test.py"], capture_output=True)
+            if result.returncode == 0:
+                print("test.py executed successfully")
+            else:
+                print(f"test.py failed with code: {result.returncode}")
         except Exception as e:
             return jsonify({'error': str(e)}), 500  # Return error message if saving fails
     else:
         return jsonify({'error': 'No file uploaded'}), 400  # Handle missing file
+    
 
 
 @app.route('/python/function2', methods=['POST','GET'])
@@ -40,6 +48,7 @@ def handle_function2():
             return jsonify({'error': str(e)}), 500  # Return error message if saving fails
     else:
         return jsonify({'error': 'No file uploaded'}), 400  # Handle missing file
+
 
 @app.route('/python/function3', methods=['POST','GET'])
 def handle_function3():
