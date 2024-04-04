@@ -64,6 +64,6 @@ This project is licensed under the MIT License.
 
 - [torchxrayvision](https://github.com/mlmed/torchxrayvision)
 - [YOLOv3-tiny](https://github.com/AlexeyAB/darknet)
-- [Gemini AI](https://www.geminiai.co/)
+- [Gemini AI](https://www.geminiai.com/)
 - [ReportLab](https://www.reportlab.com/)
 
