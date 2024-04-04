@@ -16,8 +16,7 @@ def run(val):
     model=genai.GenerativeModel('gemini-pro-vision')
 
 
-    response = model.generate_content([f"You are an advanced chest X-RAY radiologist assistant, experienced in observing and analysing a given x-ray scan image.The image contained is diagnosed with {val} where the numbers indicate the probabilty of the disease. Choose an apt threshold for diagnosis and return a short desciription of the image and how did you detect them (possible signs of disease present). Provide few checkpoints so that radiologists can cross check using them if they ever want to.Dont show any unecessary texts and cautions. ",img ])
-
+    response = model.generate_content([f"You are an advanced chest X-RAY radiologist assistant, experienced in observing and analysing a given x-ray scan image.The image contained is diagnosed with {val} where the numbers indicate the probabilty of the disease. Choose an apt threshold for diagnosis and return a short report of the image analysis and how did you detect them (possible signs of disease present). Provide few checkpoints so that radiologists can cross check using them if they ever want to.Dont show any unecessary texts and cautions. ",img ])
     # print(response.text)
     return response.text
 
