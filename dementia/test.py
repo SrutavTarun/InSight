@@ -14,7 +14,7 @@ def preprocess_mri(image_path):
 
 
 # Path to the MRI image you want to classify
-new_mri_path = 'dementia\\norm_brain.jpeg'  # Replace 'path_to_new_mri_image.jpg' with the actual path to your MRI image
+new_mri_path = '../images/alzheimers.png'  # Replace 'path_to_new_mri_image.jpg' with the actual path to your MRI image
 # Preprocess the new MRI image
 new_mri_array = preprocess_mri(new_mri_path)
 print(new_mri_array.shape)
