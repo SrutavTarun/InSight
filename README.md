@@ -61,7 +61,9 @@ Contributions are welcome! Please read the contribution guidelines before making
 This project is licensed under the MIT License.
 
 ## Acknowledgements
-torchxrayvision
-YOLOv3-tiny
-Gemini AI
-Report Lab
+
+- [torchxrayvision](https://github.com/mlmed/torchxrayvision)
+- [YOLOv3-tiny](https://github.com/AlexeyAB/darknet)
+- [Gemini AI](https://www.geminiai.co/)
+- [ReportLab](https://www.reportlab.com/)
+
