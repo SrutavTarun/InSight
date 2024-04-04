@@ -10,7 +10,7 @@ InSight is a comprehensive medical imaging analysis system designed to analyze c
 - **Medical Report Generation**: Generates detailed medical reports based on the analysis results.
 - **API Integration with Gemini AI**: Connects with Gemini AI through API for report generation from analysis result and provide with cross-checking suggestions 
   for radiologist.
--**Report Lab**:ReportLab dynamically generates detailed medical reports based on the analysis results obtained
+- **Report Lab**:ReportLab dynamically generates detailed medical reports based on the analysis results obtained
 
 ## Installation
 
@@ -26,13 +26,17 @@ InSight is a comprehensive medical imaging analysis system designed to analyze c
     pip install -r requirements.txt
     npm install  #using React.js for frontend
     ```
+3. set the API Key:
+    ```bash
+    import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
+    ```
 
 ## Usage
 
 1. Start the Flask server:
 
     ```bash
-    python app.py
+    python server.py
     ```
 
 2. Access the application at [http://localhost:5000](http://localhost:5000).
