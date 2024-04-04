@@ -31,7 +31,7 @@ export const Lung = () => {
         enctype="multipart/form-data"
         onSubmit={handleSubmit2}
       >
-        <div className="heading">Upload X-ray</div>
+        <div className="heading">Chest X-ray</div>
         <div className="heading">scan</div>
         <div className="form">
           <input id="file-upload2" type="file" accept="image/*" onChange={(e) => setFile(e.target.files[0])}/>

@@ -33,7 +33,7 @@ export const Tumour = () => {
         enctype="multipart/form-data"
         onSubmit={handleSubmit1}
       >
-        <div className="heading">Uploadd MRI</div>
+        <div className="heading">Tumour MRI</div>
         <div className="heading">scan</div>
         <div className="form">
           <input
